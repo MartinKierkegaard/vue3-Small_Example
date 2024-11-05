@@ -10,10 +10,27 @@
   </head>
   <body>
     <div id="app">
-      <div class="nav-bar"></div>
+     
 
       <h1>{{ intro }}</h1>
       
+       <div>Navn: <input  v-model="navn"></div>
+       <div>id:   <input  v-model="id"></div>
+
+       <div>twoway binding - v-model:  {{navn}}</div>
+
+        
+  
+
+       <button v-on:click="addMethod">Add button</button>
+
+       <ul>
+        <li  v-for = "l in liste" v-if="id>10">{{l.navn}} - {{l.id}}</li>
+       </ul>
+
+
+       
+
     </div>
 
     <!-- Import App -->
