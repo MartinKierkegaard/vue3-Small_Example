@@ -18,14 +18,14 @@
        <div>id:   <input  v-model="id"></div>
 
        <div>twoway binding - v-model:  {{navn}}</div>
-
+       <div>twoway binding - v-model:  {{id}}</div>
         
   
 
        <button v-on:click="addMethod">Add button</button>
 
        <ul>
-        <li  v-for = "l in liste">{{l.navn}} - {{l.id}}</li>
+        <li  v-for = "person in liste">{{person.navn}} - {{person.id}}</li>
        </ul>
 
 
